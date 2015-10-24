@@ -1,0 +1,110 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21.10.2015, 15:49:29
+    Author     : ViktorZ
+*/
+
+html, body {
+    height: 100%;
+}
+
+.template {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.top {
+    width: 100%;
+    background: darkgrey;
+}
+
+.container {
+    height: 100%;
+    background: aqua;
+}
+.content {
+    width: 600px;
+    float:left;
+    background: red;
+}
+.sidebar {
+    width: 200px;
+    float: left;
+    background: green;
+}
+
+.mainmenu li {
+    display: inline-block;
+}
+.mainmenu a{
+    padding-top: 60px; 
+}
+
+.soc {
+    list-style: none;
+}
+.soc li{
+    display: inline-block;
+}
+.soc span{
+    display: block;
+    background: url('mini-social-icons.png') no-repeat;
+    position: absolute;
+    width: 84px;
+    height: 84px;
+    left: 0;
+    top: 0;
+}
+.soc a{
+    
+    padding-left: 84px;
+    padding-top: 35px;
+    padding-bottom: 31px;
+    display: block;
+    position: relative;
+}
+.soc .ic2 span{
+    background-position: -84px 0;
+}
+.soc .ic3 span{
+    background-position: -168px 0;
+}
+.soc .ic4 span{
+    background-position: -252px 0;
+}
+.soc .ic5 span{
+    background-position: -336px 0;
+}
+
+.soc li:hover span{
+    background-position-y: -84px;
+}
+.soc li:visited{
+    background-position-y: -168px;
+}
+
+
+.tt3{
+    float: right;
+}
+clearfix:after {
+	clear: both;
+	content: "";
+	display: block;
+	height: 0;
+}
+
+.dropdown {
+    position: relative;
+    min-width: 170px;
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px 10px 0;
+    text-align: right;
+    
+}
