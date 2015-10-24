@@ -39,6 +39,8 @@ html, body {
 
 .mainmenu li {
     display: inline-block;
+    height: 60px;
+    padding: 0 0 0 0;
 }
 .mainmenu a{
     padding-top: 60px; 
