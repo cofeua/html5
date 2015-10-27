@@ -1,0 +1,62 @@
+ТАБЛИЦЫ 
+<table>
+    ТАБЛИЦА 
+</table>
+
+<tr> - строка таблицы
+<td> - ячейка  (table data)
+
+
+<th> - ячейка заголовок 
+Объеденение ячеек:
+
+у тега td  есть свойства:
+colspan 
+rowspan
+
+<td colspan="3"> - занимает место 3х столбцов
+<td rowspan="3"> - занимает место 3х строк 
+
+таблица на div 
+
+display:table-row 
+display:table-cell 
+
+<div display:table-row > 
+    <div display:table-cell > </div>
+    <div display:table-cell > </div>
+</div>
+
+ДЗ: Таблица с данными сложная с объединениями на основе table и div  
+sidebar сделать  с помощью div 
+Делаем 2ю страницу и там размещаем таблицу. м гоизонт меню проставитьссылки для взаимной навигации
+сделать кнопку "наверх"
+
+ССЫЛКИ  
+<a href="#" class="urla"> Text_анкор</a>  - строчный тег 
+.urla {
+    cursor: pointer;  - для div можно эмулировать кликабельная ссылка
+
+Якоря  в виде якоря используется Id элемента.
+}
+
+ФОРМЫ 
+
+<form action="#">
+    <input> - не парный тег
+    <select> </select> - выпадающий список
+        <option> значение </option> -  значения select_a
+            атрибут - selected - выбирает при открытии значение.
+    <textarea> </textarea> 
+</form>
+INPUT - типы: 
+
+    submit - кнопка 
+    hidden - скрытое поле
+атрибуты:
+placeholder - подсказка перед вводом текста в edit поле 
+required  - обязательное к заполнению
+
+value - атрибут значение поля
+
+

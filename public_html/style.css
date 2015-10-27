@@ -68,10 +68,14 @@ html, body {
     top: 41px;
 }
 
+.mainli .level2 li {
+    width: 210px;
+    
+}
 .level2 li {
     float: none;
     margin: 0;
-    width: 210px;
+    width: 170px;
     text-align: center;
     background: #95DF8E;
 
