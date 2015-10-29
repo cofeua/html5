@@ -38,6 +38,7 @@ html, body {
 }
 /****************************MAIN MENU  **********************/
 
+
 .menu {
     padding: 0;
     margin: 0;
@@ -55,6 +56,13 @@ html, body {
     background:  #95DF8E;
     position: relative;
     padding-top: 12px;
+    
+    -webkit-transition-duration: 0.5s; 
+    -o-transition-duration: 0.5s; 
+    -moz-transition-duration: 0.5s; 
+    transition-duration: 2s;
+     transition: 2s;
+    
 }
 
 .menu .level2, .level3{
@@ -91,7 +99,8 @@ html, body {
     display: block;
 }
 .menu li:hover{
-    background: #35C835;
+    // background: #35C835; 
+    
 } 
 .menu .level3{ 
     left:170px;
@@ -165,6 +174,9 @@ html, body {
 
 /********************* OTHER *****************************/
 
+.menu .fade > a{
+    color: darkblue;
+}
 .tt3{
     float: right;
 }
