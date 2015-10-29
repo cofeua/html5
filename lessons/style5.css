@@ -1,0 +1,79 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29.10.2015, 19:41:55
+    Author     : owner
+*/
+div {
+    float: left;
+}
+.block1 {
+    background: red;
+    width: 200px;
+    height: 200px;
+    
+}
+.block2 {
+    background: green;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    
+}
+.block3 {
+    background: lightblue;
+    width: 400px;
+    height: 200px;
+    border-radius: 50%;
+    
+}
+.block4 {
+    background: lightcyan;
+    width: 200px;
+    height: 200px;
+    border-radius: 50% / 100%;
+    
+}
+.block5 {
+    background: lightcyan;
+    width: 200px;
+    height: 200px;
+    border-left: 15px solid green;
+    border-bottom: 20px solid blue;
+    border-right: 30px solid transparent; /*берет цвет родителя.*/
+    border-top: 10px solid #95DF8E;
+    
+}
+.block6 {
+    background: lightcyan;
+    width: 0px;
+    height: 0px;
+    border-left: 15px solid green;
+    border-bottom: 20px solid blue;
+    border-right: 30px solid transparent; /*берет цвет родителя.*/
+    border-top: 10px solid #95DF8E;
+    
+}
+.btn{
+    clear:both;
+    display: block;
+    height: 20px;
+    width: 15px;
+    position: relative;
+    background: red;
+}
+.btn:after {
+    content: "";
+    border-left: 10px solid green;
+    border-top: 10px solid  red;
+}
+
+clearfix:after {
+	clear: both;
+	content: "";
+	display: block;
+	height: 0;
+}

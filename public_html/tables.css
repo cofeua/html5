@@ -11,7 +11,6 @@ html, body {
     height: 100%;
     
 }
-
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -34,16 +33,23 @@ html, body {
 table td {
     height: 30px;
     padding: 0 0 0 15px;
+    
 }
+table {
+    border: 1px;
+    border-color: #f00;
+}
+
 .tabblock {
     padding-top: 300px;
 }
+
 .divtab {
     display: table-row;
     
 }
 .trow {
-    float: left;
+    
     display: table-cell;
     width: 100%;
     
@@ -70,6 +76,8 @@ table td {
     left: 10px;
     position: fixed;
     background: url('top.png') no-repeat;
+    z-index: 9999;
+    padding: 15px;
 }
 
 
