@@ -1,0 +1,81 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29.10.2015, 14:19:16
+    Author     : ViktorZ
+*/
+html, body {
+    height: 100%;
+    
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    min-height:100%;
+    height:auto !important;
+    height: 100%;
+}
+
+.header,.content,.footer,.nav {
+    margin: 0 auto;
+}
+.content {
+    padding-top: 200px; 
+    height: 100%;
+}
+.nav {
+    position: fixed;
+
+}
+table td {
+    height: 30px;
+    padding: 0 0 0 15px;
+}
+.tabblock {
+    padding-top: 300px;
+}
+.divtab {
+    display: table-row;
+    
+}
+.trow {
+    float: left;
+    display: table-cell;
+    width: 100%;
+    
+}
+.sidebar {
+    width: 350px;
+    background: burlywood;
+}
+.tcontent {
+    width: 850px;
+    background: burlywood;
+}
+.header {
+    padding: 40px;
+    text-align: center;
+    background: beige;
+}
+
+.footer {
+    background: dimgray;
+    height: 60px;
+}
+.nav_top {
+    left: 10px;
+    position: fixed;
+    background: url('top.png') no-repeat;
+}
+
+
+clearfix:after {
+	clear: both;
+	content: "";
+	display: block;
+	height: 0;
+}
