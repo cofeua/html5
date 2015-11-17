@@ -1,70 +1,94 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
-    <head>
-        <title>test</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="reset.css">
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
-        <div class="top "> 
-            <div class="mainmenu template">
-                <ul class="menu level1">
-                    <li class="mainli"><a href="#"><span></span>Справочник такси</a>
-                        <ul class="menu level2">
-                            <li><a href="#">Такси Харьков</a></li>
-                            <li><a href="#">Такси Киев</a></li>
-                            <li><a href="#">Такси Львов</a></li>
-                            <li><a href="#">Такси Днепропетровск</a></li>
-                            <li><a href="#">Такси Винница</a></li>
-                            <li><a href="#">Такси Черкасы</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Новости</a>
-                        <ul class="menu level2">
-                            <li><a href="#">Политика ></a>
-                                <ul class="menu level3">
-                                    <li><a href="#">Выборы 2015</a></li>
-                                    <li><a href="#">Кандидаты пи..ры</a></li>
-                                    <li><a href="#">Результаты</a></li>
-                                    <li><a href="#">Архив</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Информатика</a></li>
-                            <li><a href="#">Общество</a></li>
-                            <li><a href="#">IT технологии</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="tables.html#tab1">Таблица table</a></li>
-                    <li><a href="tables.html#tab2">Таблица div</a></li>
+<head>
+ <link rel="stylesheet" type="text/css" href="style.css">
+ <meta charset="UTF-8">
+  <title>Задачи - Taxibook - Red Mine</title>
+</head>
+<body>
+<!-- #top>.wrapper>(.header>img.logo+.search+.contacts)+.mainmenu>ul>li*6 -->
+<div id="top">
+  <div class="wrapper">
+    <div class="header">
+      <img src="logo.png" alt="Daniela Ryale" class="logo">
+      <div class="search">
+          <span>
+              <a href="#">Вход</a> | <a href="#">Регистрация</a>
+          </span>
+          <input type="search" placeholder="Поиск">
+      </div>
+      <div class="contacts"></div>
+    </div>
+    <div class="mainmenu">
+      <ul>
+        <li>ГЛАВНАЯ</li>
+        <li>КАТАЛОГ</li>
+        <li>О НАС</li>
+        <li>КАК ЗАКАЗАТЬ</li>
+        <li>ОПЛАТА И ДОСТАВКА</li>
+        <li>КОНТАКТЫ</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--  #slider>.wrapper>.banners+(a.left.carousel>span)+(a.right.carousel>span) -->
+ <div id="slider">
+   <div class="wrapper">
+     <div class="banners"></div>
+     <a href="" class="left carousel"><span></span></a>
+     <a href="" class="right carousel"><span></span></a>
+   </div>
+ </div>
+<!--  #content>.wrapper>(.navmenu>div.menuitem*3)+div#hot.boxes+div#nova.boxes -->
+<div id="content">
+  <div class="wrapper">
+    <div class="navmenu">
+      <div class="menuitem"></div>
+      <div class="menuitem"></div>
+      <div class="menuitem"></div>
+    </div>
+    <div id="hot" class="boxes"></div>
+    <div id="nova" class="boxes"></div>
+  </div>
+</div>
+<!--  #about>.wrapper>div.title+div.about>img+p{lorem15}*4 -->
+<div id="about">
+  <div class="wrapper">
+    <div class="title"></div>
+    <div class="about">
+      <img src="" alt="">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur odit voluptatum, eum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis provident, ducimus consequuntur obcaecati aut quae ipsam sunt nam, velit. Eos.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error tempore magni quaerat rem, velit a maxime quia totam.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque numquam sapiente, animi facilis!</p>
+    </div>
+  </div>
+</div>
+<!--  #footer>.wrapper>(.fotermenu>ul>li*6)+.endbox>img.logo+.contacts+.copyright  -->
+<div id="footer">
+  <div class="wrapper">
+    <div class="mainmenu">
+      <ul>
+        <li>ГЛАВНАЯ</li>
+        <li>КАТАЛОГ</li>
+        <li>О НАС</li>
+        <li>КАК ЗАКАЗАТЬ</li>
+        <li>ОПЛАТА И ДОСТАВКА</li>
+        <li>КОНТАКТЫ</li>
+      </ul>
+    </div>
+    <div class="endbox">
+      <img src="" alt="" class="logo">
+      <div class="contacts"></div>
+      <div class="copyright"></div>
+    </div>
+  </div>
+</div>
 
-                </ul>
-            </div>
-            </div>
-
-        <div class="container template clearfix">
-            <div class="content">
-                .
-            </div>
-            <div class="sidebar">
-                <ul class="soc">
-                    <li class="ic1"><a href="#"><span></span>FACEBOOK</a></li>
-                    <li class="ic2"><a href="#"><span></span>OTHER NETWORK</a></li>
-                    <li class="ic3"><a href="#"><span></span>Soc сеть</a></li>
-                    <li class="ic4"><a href="#"><span></span>GOOGLE+</a></li>
-                    <li class="ic5"><a href="#"><span></span>Soc сеть</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer"> </div>
-    </body>
+</body>
 </html>
+ 
 
-
-
-
+ 
+ 
+ 

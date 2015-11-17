@@ -1,194 +1,149 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
 */
-/* 
-    Created on : 21.10.2015, 15:49:29
-    Author     : ViktorZ
-*/
-/* ************************GENERAL ****************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ************************custom css******************** */
+/* ****************************************************** */
+
 html, body {
     height: 100%;
 }
-
-.template {
-    width: 800px;
+.wrapper {
+    width: 1200px;
     margin: 0 auto;
 }
-
-.top {
-    width: 100%;
-    background: darkgrey;
+/*  ************************ TOP *************************  */
+#top {
+    background: black;
+    
 }
-
-.container {
-    height: 100%;
-    background: aqua;
-}
-.content {
-    width: 600px;
-    float:left;
-    background: lightgray;
-}
-.sidebar {
-    width: 200px;
-    float: left;
-    background: lightblue;
-}
-/****************************MAIN MENU  **********************/
-
-
-.menu {
-    padding: 0;
-    margin: 0;
-    font-family:  Verdana;
-}
-
-.menu li {
-    list-style: none;
-    display: inline-block;
- //   height: 30px;
-    padding: 0 0 10px 0;
-    margin: 0;
-    width: 170px;
-    text-align: center;
-    background:  #95DF8E;
+#top .header {
     position: relative;
-    padding-top: 12px;
-    
-    
 }
 
-.menu .level2, .level3{
-    list-style: none;
-    width: 170px;
-    padding: 0;
-    margin: 0;
-    display: none;
+#top .search {
+    padding-top: 40px; 
     position: absolute;
+    top: 0;
     left: 0;
-    top: 41px;
+    margin-left: 150px;
 }
-
-.mainli .level2 li {
-    width: 210px;
-    
-}
-.level2 li {
-    float: none;
-    margin: 0;
-    width: 170px;
-    text-align: center;
-    background: #95DF8E;
-
-}
-.menu li a{
+#top .search span{
     display: block;
-    width: 170px;
-    
-    color:    #006A35;
+    margin: 0 auto;
+    text-align: center;
     text-decoration: none;
+    color: goldenrod;
+    padding: 0 0 5px 0; 
 }
-.menu li:hover ul{
-    display: block;
+#top .search a{
+    color: goldenrod;
 }
-.menu li:hover{
-    // background: #35C835; 
-    
-} 
-.menu .level3{ 
-    left:170px;
-    top: 0;
-}
-.menu .level3 li{display: none;}
-.menu .level2 li:hover .level3 li{display: block;}
-.menu .mainli {
-    width: 210px;
-    position: relative;
-}
-.menu .mainli a{
-    padding-left: 41px;
-    
-}
-.menu .mainli span{
-    display: block;
-    background: url('icon.jpg') no-repeat;
+#top .contacts{
     position: absolute;
-    left: 0;
     top: 0;
-    padding: 1px;
-    width: 41px;
-    height: 41px;
+    right: 0;
 }
-
-
-
-/**********************SOCIAL BUTTONS***************************************/
-
-.soc {
-    list-style: none;
+#top img.logo{
+    display: block;
+    margin: 0 auto;
+}
+.mainmenu{
     padding: 0;
-}
-.soc li{
-    display: inline-block;
-}
-.soc span{
-    display: block;
-    background: url('mini-social-icons.png') no-repeat;
-    position: absolute;
-    width: 84px;
-    height: 84px;
-    left: 0;
-    top: 0;
-}
-.soc a{
+    margin-top: 15px;
     
-    padding-left: 84px;
-    padding-top: 35px;
-    padding-bottom: 31px;
-    display: block;
-    position: relative;
-}
-.soc .ic2 span{
-    background-position: -84px 0;
-}
-.soc .ic3 span{
-    background-position: -168px 0;
-}
-.soc .ic4 span{
-    background-position: -252px 0;
-}
-.soc .ic5 span{
-    background-position: -336px 0;
-}
-
-.soc li:hover span{
-    background-position-y: -84px;
-}
-
-/********************* OTHER *****************************/
-
-.menu .fade > a{
-    color: darkblue;
-}
-.tt3{
-    float: right;
-}
-clearfix:after {
-	clear: both;
-	content: "";
-	display: block;
-	height: 0;
-}
-
-.dropdown {
-    position: relative;
-    min-width: 170px;
-    max-width: 100%;
-    display: inline-block;
-    vertical-align: top;
-    margin: 0 15px 10px 0;
-    text-align: right;
+    border-top: 1px solid grey;
     
+}
+.mainmenu ul {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.mainmenu li {
+    display: inline-block;
+    padding: 15px 10px 18px 10px;
+    color: #fff;
+}
+.mainmenu li:hover {
+   
+    color: goldenrod;
+}
+/*  ************************ slider *************************  */
+#slider {
+    background: #A3A3A3;
+}
+
+#slider .wrapper {
+    height: 400px; // ДЛЯ ТЕСТА
+}
+
+/*  ************************ content *************************  */
+#content {
+    background: #fff;
+}
+#content .wrapper {
+    height: 600px; // ДЛЯ ТЕСТА
+}
+
+/*  ************************ about *************************  */
+#about {
+    background: #fff;
+}
+#about .wrapper {
+    height: 300px; // ДЛЯ ТЕСТА
+}
+
+/* ************************* footer ************************  */
+#footer {
+    background: black;
+}
+#footer .wrapper {
+    height: 200px; // ДЛЯ ТЕСТА
 }
