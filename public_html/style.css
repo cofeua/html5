@@ -97,22 +97,33 @@ html, body {
 .mainmenu{
     padding: 0;
     margin-top: 15px;
-    
     border-top: 1px solid grey;
-    
 }
+#footer .mainmenu {
+    border-top: none;
+    border-bottom: 1px solid grey;
+}
+
 .mainmenu ul {
     display: block;
     margin: 0 auto;
     text-align: center;
 }
 .mainmenu li {
+    border-top: 1px solid transparent;
     display: inline-block;
     padding: 15px 10px 18px 10px;
     color: #fff;
+       text-decoration: none;
 }
 .mainmenu li:hover {
-   
+    border-top: 1px solid goldenrod;  /* сделать box-shadow   li: first_child  last_child кружочки бэком сделать*/
+    color: goldenrod;
+}
+/*   if ie  body div display none */
+#footer .mainmenu li:hover {
+    border-bottom: 1px solid goldenrod;
+    border-top: none;
     color: goldenrod;
 }
 /*  ************************ slider *************************  */
