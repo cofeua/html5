@@ -128,8 +128,9 @@ html, body {
 #content {
     background: #fff;
 }
-#content .wrapper {
-    height: 600px; // ДЛЯ ТЕСТА
+
+#content .boxes {
+    height: 300px; // ДЛЯ ТЕСТА
 }
 
 /*  ************************ about *************************  */
@@ -138,6 +139,9 @@ html, body {
 }
 #about .wrapper {
     height: 300px; // ДЛЯ ТЕСТА
+}
+#about .title, h3 {
+    text-align: center;
 }
 
 /* ************************* footer ************************  */
