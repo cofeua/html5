@@ -60,8 +60,9 @@ html, body {
 }
 /*  ************************ TOP *************************  */
 #top {
-    background: url('bg_header.png') no-repeat;
-    background-position: center;
+    background: url('bg-header.png') no-repeat;
+    background-size: cover;
+    background-color: black;
 }
 #top .header {
     position: relative;
@@ -69,7 +70,7 @@ html, body {
 
 #top .search {
     float: left;
-    
+    margin-left: 100px;
 }
 #top .search span{
     display: block;
@@ -89,8 +90,7 @@ html, body {
 }
 #top .logo{
     float: left;
-    display: block;
-    margin: 0 auto;
+    margin-left: 320px;
     text-align: center;
 }
 .mainmenu{
@@ -100,8 +100,15 @@ html, body {
 }
 .mainmenu li a{
     color: #fff;
+    display: inline-block;
     padding: 15px 10px 18px 10px;
     text-decoration: none;
+    border-top: 1px solid transparent;
+}
+#footer .mainmenu li a{
+    
+    border-top: none;
+    border-bottom:  1px solid transparent;
 }
 #footer .mainmenu {
     border-top: none;
@@ -113,16 +120,30 @@ html, body {
     margin: 0 auto;
     text-align: center;
 }
-.mainmenu li {
-    border-top: 1px solid transparent;
+.mainmenu>ul>li {
     display: inline-block;
+    position: relative;
 }
+.mainmenu>ul>li:after {
+    content: "";
+    width: 4px;
+    height: 4px;
+    top: 20px;
+    right: -5px;
+    border: 1px solid grey;
+    border-radius: 3px;
+    position: absolute;
+}
+.mainmenu>ul>li:last-child:after {
+    border: none;
+}
+
 .mainmenu li:hover a{
     border-top: 1px solid goldenrod;  /* сделать box-shadow   li: first_child  last_child кружочки бэком сделать*/
     color: goldenrod;
 }
 /*   if ie  body div display none */
-#footer .mainmenu li:hover {
+#footer .mainmenu li:hover a{
     border-bottom: 1px solid goldenrod;
     border-top: none;
     color: goldenrod;

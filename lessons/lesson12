@@ -1,0 +1,80 @@
+резиновый сайт  -  адаптивный
+width:20%
+min-width: 300px
+max-width: 700px
+
+разрешение экрана:
+50%
+1366 1920     
+другие: 
+1200 1024 
+
+Отзывчивый сайт и медиа запросы.
+в css или подключаются в html 
+
+CSS 
+@media screen and(max-width:600px) {
+    .header {
+         стили
+    }
+    #top {
+    }
+}
+
+
+в index html файле  (больше трафика)
+
+подключаем через <link  rel   href  media="screen and(max...)"
+
+**********************************************
+
+от больших  к меньшим 
+wrapper {
+width: 1200px;
+}
+media ---  max width 700
+media ---  max width 300
+
+
+
+от меньших к большим  mobile first
+wrapper { /*для мобильных */
+width: 1200px;
+}
+media ---  min width 300
+media ---  min width 700
+
+
+IE ниже 8  media запросы не поддерживает   ссылка в ВК
+
+
+/////////////////////////////
+при адаптивной верстке 
+для текста
+word-wrap: break-word; - перенос по контенту  а не по пробелу.
+
+для картинки
+тянем картинку за размером
+img{
+max-width:100%;
+max-height: auto;
+width: auto\9;  -- для IE  для версии ниже 9
+}
+
+делаем чтобы картинка не вываливалась: 
+overflow: hidden;  для родителя.
+
+
+пример всех media запросов.  в ВК
+
+<meta name="viewport"  content="width=device-width, initial-scale=1">
+
+
+1920x1080
+/ 2.5          -> 768x
+
+brother-hood.com.ua  - тля тестов на разных экранов 
+initial-scale=1  - маштаб при открытии  1,5 - 150% 
+
+переверстать с медиазапросами
+bootstrap  foundation
